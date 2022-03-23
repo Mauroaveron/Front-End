@@ -14,18 +14,14 @@
     <nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid d-flex">
 		  <a class="navbar-brand me-auto" href="#">Mauro Adrián Verón</a>
-		  <a id="navbar-linkedin" href="#"
-			><i class="fa-brands fa-linkedin fa-2xl pe-2"></i
-		  ></a>
-		  <a id="navbar-login" href="#"
-			><button type="button" class="btn btn-outline-success btn-sm">
+		  <a id="navbar-linkedin" href="#"><i class="fa-brands fa-linkedin fa-2xl pe-2"></i></a>
+		  <a id="navbar-login" href="#"><button type="button" class="btn btn-outline-success btn-sm">
 			  Login
-			</button></a
-		  >
+			</button></a>
 		</div>
 	  </nav>
     <div class="container-fluid">  
-    <div class="card mat-card" id="first-card">
+        <div class="card mat-card" id="first-card">
         <div id="profile-background"><img src="https://www.wallpaperbetter.com/wallpaper/513/91/777/cool-technology-code-1080P-wallpaper-middle-size.jpg" alt="..." width="1000" height="700"></div>
         <div id="info" style="padding: 16px">
             <div id="info-img">
@@ -54,90 +50,118 @@
             <button type="button" class="btn btn-light">Más</button>
         </div>
         </div>
-    </div>
-    <div class="card mat-card">
-        <div class="card-titles d-flex">
-            <h2 class="card-about me-auto">Acerca de</h2>
-            <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
         </div>
-        <div>
-            Estudiante de Licenciatura en Informática, entusiasmado por iniciar una carrera laboral como desarrollador.
+        <div class="card mat-card">
+            <div class="card-titles d-flex">
+                <h2 class="card-about me-auto">Acerca de</h2>
+                <div class="btn-edit" onclick="cambiar_parrafo()"><button type= "button" class="btn btn-link"><i class="fa fa-pen"></i></button></div>
+            </div>
+            <div>
+                <p id="text-about">Estudiante de Licenciatura en Informática, entusiasmado por iniciar una carrera laboral como desarrollador.</p>
+            </div>
+            <div>
+                <input id="edit-about" type="text" oninput="myFunction2(this.value)" style="display:none">
+            </div>
+            <input type="file" id="file1" onchange="showFile(this)">
         </div>
-    </div>
-    <div class="card mat-card">
-        <div class="experiences d-flex">
-            <h2 class="experiences-title me-auto" style="padding-bottom: 20px">Experiencia</h2>
-            <a href="#" class="btn-right"><i class="fa fa-plus"></i></a>
+        <div class="card mat-card">
+            <div class="card-title d-flex">
+                <h2 class="experiences-title me-auto" style="padding-bottom: 20px">Experiencia</h2>
+                <a href="#" class="btn-right"><i class="fa fa-plus"></i></a>
+            </div>
+            <div>
+                <ul class="items-list">
+                    <li>
+                        <div class="list-info d-flex">
+                            <div class="flex-shrink-0">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Aerol%C3%ADneas_Argentinas_Logo_2010.svg/1280px-Aerol%C3%ADneas_Argentinas_Logo_2010.svg.png" alt="AR" width="150" height="100">
+                            </div>
+                            <div class="flex-grow-1 ms-3 d-flex justify-content-start">
+                                <div>    
+                                    <h2>Auxiliar de contact center</h2>
+                                    <h5>Aerolíneas Argentinas</h5>
+                                    <p><time>Septiembre 2015</time> - <time>Julio 2019</time> <time>(3 años y 10 meses)</time></p>
+                                </div>            
+                            </div>
+                            <div class="data-control">
+                                <a href="#" class="btn-right"><i class="fa fa-pen pe-4"></i></a>
+                                <a href="#" class="btn-right"><i class="fa-solid fa-trash"></i></a> 
+                            </div>
+                        </div>    
+                    </li>
+                </ul>
+            </div>
+            <div class="card-title d-flex d-flex" style="padding-top: 20px">
+                <h2 class="education-title me-auto" style="padding-bottom: 20px">Educación</h2>
+                <a href="#" class="btn-right"><i class="fa fa-plus"></i></a>
+            </div>
+            <div>
+                <ul class="items-list">
+                    <li>
+                        <div class="list-info d-flex">
+                            <div class="flex-shrink-0">
+                                <img src="https://ddhh.unq.edu.ar/wp-content/uploads/2017/04/Logo-UNQ-RGB.png" alt="UNQ" width="150" height="100">
+                            </div>
+                            <div class="flex-grow-1 ms-3 d-flex justify-content-start">
+                                <div>    
+                                    <a href="http://www.unq.edu.ar/" target="_blank"><h3>Universidad Nacional de Quilmes</h3></a>
+                                    <h5>Licenciatura en Informática</h5>
+                                    <p><time>2020</time> - <time>En curso</time></p>
+                                </div>            
+                            </div>
+                            <div class="data-control">
+                                <a href="#" class="btn-right"><i class="fa fa-pen pe-4"></i></a>
+                                <a href="#" class="btn-right"><i class="fa-solid fa-trash"></i></a> 
+                            </div>
+                        </div>    
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="items-list">
+                    <li>
+                        <div class="list-info d-flex">
+                            <div class="flex-shrink-0">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Unaj.jpg/245px-Unaj.jpg" alt="UNAJ" width="150" height="100">
+                            </div>
+                            <div class="flex-grow-1 ms-3 d-flex justify-content-start">
+                                <div>    
+                                    <a href="https://www.unaj.edu.ar/" target="_blank"><h3>Universidad Nacional Arturo Jauretche</h3></a>
+                                    <h5>Ingeniería en Informática</h5>
+                                    <p><time>2015</time> - <time>2017</time></p>
+                                </div>            
+                            </div>
+                            <div class="data-control">
+                                <a href="#" class="btn-right"><i class="fa fa-pen pe-4"></i></a>
+                                <a href="#" class="btn-right"><i class="fa-solid fa-trash"></i></a> 
+                            </div>
+                        </div>    
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="items-list">
+                    <li>
+                        <div class="list-info d-flex">
+                            <div class="flex-shrink-0">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/UNLP_Logo_%28cropped%29.svg/1200px-UNLP_Logo_%28cropped%29.svg.png" alt="UNLP" width="150" height="100">
+                            </div>
+                            <div class="flex-grow-1 ms-3 d-flex justify-content-start">
+                                <div>    
+                                    <a href="https://unlp.edu.ar/" target="_blank"><h3>Universidad Nacional de Quilmes</h3></a>
+                                    <h5>Traductorado en Inglés</h5>
+                                    <p><time>2013</time> - <time>2014</time></p>
+                                </div>            
+                            </div>
+                            <div class="data-control">
+                                <a href="#" class="btn-right"><i class="fa fa-pen pe-4"></i></a>
+                                <a href="#" class="btn-right"><i class="fa-solid fa-trash"></i></a> 
+                            </div>
+                        </div>    
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="experience-details d-flex" style="padding-left: 40px">
-            <div class="flex-shrink-0">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Aerol%C3%ADneas_Argentinas_Logo_2010.svg/1280px-Aerol%C3%ADneas_Argentinas_Logo_2010.svg.png" alt="..." width="150" height="100">
-            </div>
-            <div class="flex-grow-1 ms-3 d-flex justify-content-start">
-                <div clas="experience-first">    
-                    <h2>Auxiliar de Contact Center</h2>
-                    <h5>Aerolíneas Argentinas<h5>
-                    <h4>septiembre 2015 - julio 2019 - 3 años y 7 meses</h4>
-                </div>            
-            </div>
-            <div class="experience-edit">
-                <a href="#" class="btn-right"><i class="fa fa-pen pe-4"></i></a>
-                <a href="#" class="btn-right"><i class="fa-solid fa-trash"></i></a> 
-            </div>    
-        </div>
-        <div class="education d-flex" style="padding-top: 20px">
-            <h2 class="education-title me-auto" style="padding-bottom: 20px">Educación</h2>
-            <a href="#" class="btn-right"><i class="fa fa-plus"></i></a>
-        </div>
-        <div class="education-details d-flex" style="padding-left: 40px">
-            <div class="flex-shrink-0">
-                <img src="https://ddhh.unq.edu.ar/wp-content/uploads/2017/04/Logo-UNQ-RGB.png" alt="..." width="150" height="100">
-            </div>
-            <div class="flex-grow-1 ms-3 d-flex justify-content-start">
-                <div clas="education-first">    
-                    <h2>Universidad Nacional de Quilmes</h2>
-                    <h5>Licenciatura en Informática<h5>
-                    <p class="edu-date">2020 - En curso</p>
-                </div>            
-            </div>
-            <div class="education-edit">
-                <a href="#" class="btn-right"><i class="fa fa-pen pe-4"></i></a>
-                <a href="#" class="btn-right"><i class="fa-solid fa-trash"></i></a> 
-            </div>
-        </div>
-        <div class="education-details d-flex" style="padding-left: 40px">
-            <div class="flex-shrink-0">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Unaj.jpg/245px-Unaj.jpg" alt="..." width="150" height="100">
-            </div>
-            <div class="flex-grow-1 ms-3 d-flex d-flex justify-content-start">
-                <div clas="education-second">    
-                    <h2>Universidad Nacional Arturo Jauretche</h2>
-                    <h5>Ingeniería en Informática<h5>
-                    <p class="edu-date">2015 - 2017</p>
-                </div>            
-            </div>
-            <div class="education-edit">
-                <a href="#" class="btn-right"><i class="fa fa-pen pe-4"></i></a>
-                <a href="#" class="btn-right"><i class="fa-solid fa-trash"></i></a> 
-            </div>
-        </div>
-        <div class="education-details d-flex" style="padding-left: 40px">
-            <div class="flex-shrink-0">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/UNLP_Logo_%28cropped%29.svg/1200px-UNLP_Logo_%28cropped%29.svg.png" alt="..." width="150" height="100">
-            </div>
-            <div class="flex-grow-1 ms-3 d-flex d-flex justify-content-start">
-                <div clas="education-third">    
-                    <h2>Universidad Nacional de La Plata</h2>
-                    <h5>Traductorado en Inglés>
-                    <p class="edu-date">2013 - 2014</p>
-                </div>            
-            </div>
-            <div class="education-edit">
-                <a href="#" class="btn-right"><i class="fa fa-pen pe-4"></i></a>
-                <a href="#" class="btn-right"><i class="fa-solid fa-trash"></i></a> 
-            </div>
-        </div>                  
-    </div>
         <div class="card mat-card"> 
             <div class="row">
                 <div class="col-11">
@@ -302,7 +326,7 @@
             <div class="row">
                 <div class="col-11">
                     <div class="proyects-title">
-                        <h2 class="skills-title me-auto" style="padding-bottom: 20px">Hard Skills & Soft Skills</h2>    
+                        <h2 class="skills-title me-auto" style="padding-bottom: 20px">Proyectos</h2>    
                     </div>
                 </div>
                 <div class="col-1">
@@ -314,7 +338,7 @@
             <div class="row">
                 <div class="col-11">
                     <div class="proyect-name">
-                        <h2>Portafolio web</h2>
+                        <a href="#" class="proyect-link"><h2>Portafolio web</h2></a>
                     </div>
                     <div class="proyect-description">    
                         <p>Portafolio web impulsado por el programa Argentina Programa, utilizando tecnologías como HTML, CSS,
@@ -322,13 +346,57 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-1"><div class="skills-edit d-flex justify-content-start">
-                    <a href="#" class="btn-right"><i class="fa fa-pen pe-4"></i></a>
-                    <a href="#" class="btn-right"><i class="fa-solid fa-trash"></i></a> 
-                </div>   </div>
+                <div class="col-1">
+                    <div class="skills-edit d-flex justify-content-start">
+                        <a href="#" class="btn-right"><i class="fa fa-pen pe-4"></i></a>
+                        <a href="#" class="btn-right"><i class="fa-solid fa-trash"></i></a> 
+                    </div>   
+                </div>
             </div>
         </div>    
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        function cambiar_parrafo(){
+            document.getElementById("edit-about").style.display="block";
+            let texto = document.getElementById("text-about").innerText;
+            console.log(texto);
+        };
+        function myFunction2(valor) {
+            document.getElementById("text-about").innerText = valor;
+        };
+
+        function logMessage(message) {
+            console.log(message + "<br>");
+        }
+
+        let textarea=document.getElementById("edit-about");
+        textarea.addEventListener('keyup', (e) => {
+            logMessage('Key "${e.key}" released [event: keyup]');
+            if (e.key == "Enter") {
+                document.getElementById("edit-about").style.display="none";
+            }
+        });
+
+        //carga el contenido de un archivo de texto y lo muestra en el parrafo
+        function showFile(input) {
+            let file = input.files[0];
+            alert('File name: $(file.name)'); //e.g my png
+            alert('Last modified: $(file.lastModified)');//e.g 155556163
+
+            let reader = new FileReader();
+            reader.readAsText(file);
+            reader.onload = function() {
+                console.log(reader.result);
+                document.getElementById("text-about").innerText=reader.result;
+            
+            };
+            reader.onerror = function() {
+                console.log(reader.error);
+            }
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+    crossorigin="anonymous"></script>
 </body>
 </html>
