@@ -134,3 +134,7 @@ ul.item-list li div.data-container {
 .proyect-description {
     padding-left: 20px;
 }
+
+.items-list {
+    list-style: none;
+}
