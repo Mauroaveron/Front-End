@@ -252,3 +252,8 @@ ul.item-list li div.data-container {
 #text-about {
     font-size: 1.2em;
 }
+
+#text-footer {
+    font-size: 1.2em;
+    color: white;
+}
