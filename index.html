@@ -27,15 +27,18 @@
   </header>
   <main class="container-fluid">
     <section class="card mat-card" id="first-card">
-      <article id="profile-background">
-        <a href="#" class="btn-edit" id="btn-camera"><i class="fa-solid fa-camera"></i></a>
-        <img src="./images/mavlogo.jpg" alt="MAV Logo" width="1000" height="700" />
-      </article>
+      <div class="profile-background">
+        <img src="./images/mavlogo.jpg" alt="MAV Logo" width="1000" height="700" id="bg-picture">
+        <input type="file" id="bgpic-file" accept="image/png, image/jpeg">
+        <label for="bgpic-file" id="bgPictureBtn"><i class="fa-solid fa-camera"></i></label>
+      </div>
       <article id="info" style="padding: 16px">
         <div class="row">
           <div class="col-xxl-11 col-11">
-            <div id="info-img d-flex">
-              <img class="profile-image me-auto" src="./images/mavpp.jfif" />
+            <div class="info-img d-flex">
+              <img class="profile-image me-auto" src="./images/mavpp.jfif">
+              <input type="file" id="pp-file" accept="image/png, image/jpeg">
+              <label for="pp-file" id="profilePictureBtn">Elegir foto</label>
             </div>
             <div class="col-xxl-1 col-1">
               <div id="edit-info">
